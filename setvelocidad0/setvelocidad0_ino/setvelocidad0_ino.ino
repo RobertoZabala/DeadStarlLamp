@@ -1,7 +1,7 @@
 #include <Servo.h> 
  
 Servo myservo;  // Cremos el objeto de servo
-const int speed0 = 71; // valor en el que el servo se mantiene quieto (es posible que haga falta variarlo un poco)
+const int speed0 =  74 ; // valor en el que el servo se mantiene quieto (es posible que haga falta variarlo un poco)
 const int speedIda = 81;
 const int speedVuelta = 61;
 int i; // iterador
@@ -27,7 +27,7 @@ void setup()
 void loop() 
 { 
  
-      myservo.write(-vel);
+      myservo.write(speed0);
        }
  
   

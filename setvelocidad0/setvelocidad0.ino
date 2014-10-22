@@ -1,5 +1,5 @@
 #include <Encoder.h>
-Encoder myEnc(2, 6);
+Encoder myEnc(3, 4);
 
 #include <Servo.h> 
 Servo myservo;  // Cremos el objeto de servo
@@ -7,8 +7,8 @@ const int speed0 = 71; // valor en el que el servo se mantiene quieto (es posibl
 const int speedIda = speed0+90;
 const int speedVuelta = speed0-90;
 int i; // iterador
-int potEndStop = 12;
-int endstop = 13 ; // logica inversa en el endstop 0=pulsado, 1=no pulsado
+int potEndStop = 2;// LED no lo utilizo
+int endstop = 7 ; // logica inversa en el endstop 0=pulsado, 1=no pulsado
 int buttonState = 0; 
 int buttonStateOld = 0; 
 boolean posicionfinal = false;
